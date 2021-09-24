@@ -7,4 +7,4 @@ Now, I change it.
 * The 4th changing.
 * The 5th changing.
 * Changing on dev branch.
-* Creating a new branch is quick & simple.
+* Creating a new branch is quick and simple.
