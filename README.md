@@ -1,4 +1,4 @@
-# README file for our caculator.
+# README file for our calculator.
 
 Now, I change it.
 
@@ -9,3 +9,4 @@ Now, I change it.
 * The 4th changing.
 
 * The 5th changing.
+* Changing on dev branch.
