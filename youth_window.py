@@ -40,6 +40,7 @@ class YouthWindow(QMainWindow, Ui_Form):
             final += grade[i] * course[i] / course.sum()
 
         self.final_grade.display(final)
+        # print(final)
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
