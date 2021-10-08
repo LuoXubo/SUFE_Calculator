@@ -14,43 +14,152 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(712, 486)
-        self.textBrowser = QtWidgets.QTextBrowser(Form)
-        self.textBrowser.setGeometry(QtCore.QRect(60, 80, 161, 41))
-        self.textBrowser.setObjectName("textBrowser")
-        self.textBrowser_2 = QtWidgets.QTextBrowser(Form)
-        self.textBrowser_2.setGeometry(QtCore.QRect(60, 140, 161, 41))
-        self.textBrowser_2.setObjectName("textBrowser_2")
-        self.textBrowser_3 = QtWidgets.QTextBrowser(Form)
-        self.textBrowser_3.setGeometry(QtCore.QRect(60, 200, 161, 41))
-        self.textBrowser_3.setObjectName("textBrowser_3")
-        self.textBrowser_4 = QtWidgets.QTextBrowser(Form)
-        self.textBrowser_4.setGeometry(QtCore.QRect(60, 260, 161, 41))
-        self.textBrowser_4.setObjectName("textBrowser_4")
-        self.ok = QtWidgets.QPushButton(Form)
-        self.ok.setGeometry(QtCore.QRect(70, 390, 75, 23))
-        self.ok.setObjectName("ok")
-        self.check_1 = QtWidgets.QCheckBox(Form)
-        self.check_1.setGeometry(QtCore.QRect(300, 10, 71, 16))
-        self.check_1.setObjectName("check_1")
-        self.check_2 = QtWidgets.QCheckBox(Form)
-        self.check_2.setGeometry(QtCore.QRect(400, 10, 71, 16))
-        self.check_2.setObjectName("check_2")
-        self.lcdNumber = QtWidgets.QLCDNumber(Form)
-        self.lcdNumber.setGeometry(QtCore.QRect(520, 340, 161, 81))
+        Form.resize(798, 568)
+        self.base_widget = QtWidgets.QWidget(Form)
+        self.base_widget.setGeometry(QtCore.QRect(50, 30, 710, 550))
+        self.base_widget.setStyleSheet("background-color: rgb(104, 104, 104);\n"
+"border-radius: 25px;")
+        self.base_widget.setObjectName("base_widget")
+        self.lcdNumber = QtWidgets.QLCDNumber(self.base_widget)
+        self.lcdNumber.setGeometry(QtCore.QRect(530, 450, 161, 81))
+        self.lcdNumber.setStyleSheet("background-color: rgb(255, 170, 0);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 9pt \"楷体\";\n"
+"border-radius: 10px;\n"
+"")
         self.lcdNumber.setObjectName("lcdNumber")
-        self.salary = QtWidgets.QLineEdit(Form)
-        self.salary.setGeometry(QtCore.QRect(300, 90, 113, 20))
+        self.ok = QtWidgets.QPushButton(self.base_widget)
+        self.ok.setGeometry(QtCore.QRect(20, 480, 81, 41))
+        self.ok.setStyleSheet("background-color: rgb(255, 170, 0);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 15pt \"楷体\";\n"
+"border-radius: 10px;\n"
+"")
+        self.ok.setObjectName("ok")
+        self.reset = QtWidgets.QPushButton(self.base_widget)
+        self.reset.setGeometry(QtCore.QRect(120, 480, 81, 41))
+        self.reset.setStyleSheet("background-color: rgb(255, 170, 0);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 15pt \"楷体\";\n"
+"border-radius: 10px;\n"
+"")
+        self.reset.setObjectName("reset")
+        self.check_2 = QtWidgets.QCheckBox(self.base_widget)
+        self.check_2.setGeometry(QtCore.QRect(640, 20, 35, 30))
+        self.check_2.setToolTipDuration(0)
+        self.check_2.setStyleSheet("background-color: rgb(255, 170, 127);\n"
+"color: rgb(0, 0, 0);\n"
+"font: 10pt \"楷体\";\n"
+"border-radius: 10px;\n"
+"")
+        self.check_2.setObjectName("check_2")
+        self.textBrowser = QtWidgets.QTextBrowser(self.base_widget)
+        self.textBrowser.setGeometry(QtCore.QRect(120, 100, 200, 50))
+        font = QtGui.QFont()
+        font.setFamily("楷体")
+        font.setPointSize(10)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.textBrowser.setFont(font)
+        self.textBrowser.setStyleSheet("background-color: rgb(255, 170, 0);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 10pt \"楷体\";\n"
+"border-radius: 10px;\n"
+"")
+        self.textBrowser.setObjectName("textBrowser")
+        self.textBrowser_4 = QtWidgets.QTextBrowser(self.base_widget)
+        self.textBrowser_4.setGeometry(QtCore.QRect(120, 340, 200, 50))
+        font = QtGui.QFont()
+        font.setFamily("楷体")
+        font.setPointSize(20)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.textBrowser_4.setFont(font)
+        self.textBrowser_4.setStyleSheet("background-color: rgb(255, 170, 0);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 20pt \"楷体\";\n"
+"border-radius: 10px;\n"
+"")
+        self.textBrowser_4.setObjectName("textBrowser_4")
+        self.salary = QtWidgets.QLineEdit(self.base_widget)
+        self.salary.setGeometry(QtCore.QRect(440, 110, 113, 20))
+        self.salary.setStyleSheet("background-color:rgb(255, 170, 127);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 10pt \"楷体\";\n"
+"border-radius: 10px;\n"
+"")
         self.salary.setObjectName("salary")
-        self.avg = QtWidgets.QLineEdit(Form)
-        self.avg.setGeometry(QtCore.QRect(300, 150, 113, 20))
+        self.avg = QtWidgets.QLineEdit(self.base_widget)
+        self.avg.setGeometry(QtCore.QRect(440, 190, 113, 20))
+        self.avg.setStyleSheet("background-color:rgb(255, 170, 127);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 10pt \"楷体\";\n"
+"border-radius: 10px;\n"
+"")
         self.avg.setObjectName("avg")
-        self.year = QtWidgets.QLineEdit(Form)
-        self.year.setGeometry(QtCore.QRect(300, 210, 113, 20))
-        self.year.setObjectName("year")
-        self.sum = QtWidgets.QLineEdit(Form)
-        self.sum.setGeometry(QtCore.QRect(300, 260, 113, 20))
+        self.check_1 = QtWidgets.QCheckBox(self.base_widget)
+        self.check_1.setGeometry(QtCore.QRect(540, 20, 35, 30))
+        self.check_1.setToolTipDuration(0)
+        self.check_1.setStyleSheet("background-color: rgb(255, 170, 127);\n"
+"color: rgb(0, 0, 0);\n"
+"font: 10pt \"楷体\";\n"
+"border-radius: 10px;\n"
+"")
+        self.check_1.setObjectName("check_1")
+        self.sum = QtWidgets.QLineEdit(self.base_widget)
+        self.sum.setGeometry(QtCore.QRect(440, 350, 113, 20))
+        self.sum.setStyleSheet("background-color:rgb(255, 170, 127);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 10pt \"楷体\";\n"
+"border-radius: 10px;\n"
+"")
         self.sum.setObjectName("sum")
+        self.year = QtWidgets.QLineEdit(self.base_widget)
+        self.year.setGeometry(QtCore.QRect(440, 270, 113, 20))
+        self.year.setStyleSheet("background-color:rgb(255, 170, 127);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 10pt \"楷体\";\n"
+"border-radius: 10px;\n"
+"")
+        self.year.setObjectName("year")
+        self.textBrowser_2 = QtWidgets.QTextBrowser(self.base_widget)
+        self.textBrowser_2.setGeometry(QtCore.QRect(120, 180, 200, 50))
+        font = QtGui.QFont()
+        font.setFamily("楷体")
+        font.setPointSize(20)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.textBrowser_2.setFont(font)
+        self.textBrowser_2.setStyleSheet("background-color: rgb(255, 170, 0);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 20pt \"楷体\";\n"
+"border-radius: 10px;\n"
+"")
+        self.textBrowser_2.setObjectName("textBrowser_2")
+        self.textBrowser_3 = QtWidgets.QTextBrowser(self.base_widget)
+        self.textBrowser_3.setGeometry(QtCore.QRect(120, 260, 200, 50))
+        font = QtGui.QFont()
+        font.setFamily("楷体")
+        font.setPointSize(20)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.textBrowser_3.setFont(font)
+        self.textBrowser_3.setStyleSheet("background-color: rgb(255, 170, 0);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 20pt \"楷体\";\n"
+"border-radius: 10px;\n"
+"")
+        self.textBrowser_3.setObjectName("textBrowser_3")
+        self.close = QtWidgets.QPushButton(self.base_widget)
+        self.close.setGeometry(QtCore.QRect(10, 10, 41, 21))
+        self.close.setStyleSheet("background-color: rgb(255, 0, 0);\n"
+"color: rgb(255, 255, 255);\n"
+"border-radius: 10px; ")
+        self.close.setObjectName("close")
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -58,27 +167,32 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "养老金计算器"))
+        self.ok.setText(_translate("Form", "计算"))
+        self.reset.setText(_translate("Form", "Reset"))
+        self.check_2.setText(_translate("Form", "女"))
         self.textBrowser.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">在职员工平均工资</p></body></html>"))
-        self.textBrowser_2.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">平均缴费指数</p></body></html>"))
-        self.textBrowser_3.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">累计缴费年限</p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
+"</style></head><body style=\" font-family:\'楷体\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'SimSun\'; font-size:14pt; font-weight:600;\">在职员工平均工资</span></p></body></html>"))
         self.textBrowser_4.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">个人账户储存额</p></body></html>"))
-        self.ok.setText(_translate("Form", "计算"))
+"</style></head><body style=\" font-family:\'楷体\'; font-size:20pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'SimSun\'; font-size:14pt; font-weight:600;\">在职员工平均工资</span></p></body></html>"))
+        self.salary.setText(_translate("Form", "10000"))
+        self.avg.setText(_translate("Form", "0.6"))
         self.check_1.setText(_translate("Form", "男"))
-        self.check_2.setText(_translate("Form", "女"))
+        self.sum.setText(_translate("Form", "10000"))
+        self.year.setText(_translate("Form", "20"))
+        self.textBrowser_2.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'楷体\'; font-size:20pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'SimSun\'; font-size:14pt; font-weight:600;\">在职员工平均工资</span></p></body></html>"))
+        self.textBrowser_3.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'楷体\'; font-size:20pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'SimSun\'; font-size:14pt; font-weight:600;\">在职员工平均工资</span></p></body></html>"))
+        self.close.setText(_translate("Form", "x"))

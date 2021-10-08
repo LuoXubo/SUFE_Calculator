@@ -14,34 +14,99 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(634, 439)
-        self.textBrowser = QtWidgets.QTextBrowser(Form)
-        self.textBrowser.setGeometry(QtCore.QRect(70, 50, 121, 41))
-        self.textBrowser.setObjectName("textBrowser")
-        self.textBrowser_2 = QtWidgets.QTextBrowser(Form)
-        self.textBrowser_2.setGeometry(QtCore.QRect(70, 130, 121, 41))
-        self.textBrowser_2.setObjectName("textBrowser_2")
-        self.textBrowser_3 = QtWidgets.QTextBrowser(Form)
-        self.textBrowser_3.setGeometry(QtCore.QRect(80, 240, 121, 41))
-        self.textBrowser_3.setObjectName("textBrowser_3")
-        self.height = QtWidgets.QLineEdit(Form)
-        self.height.setGeometry(QtCore.QRect(300, 60, 113, 20))
-        self.height.setObjectName("height")
-        self.weight = QtWidgets.QLineEdit(Form)
-        self.weight.setGeometry(QtCore.QRect(300, 140, 113, 20))
-        self.weight.setObjectName("weight")
-        self.lcd = QtWidgets.QLCDNumber(Form)
-        self.lcd.setGeometry(QtCore.QRect(320, 250, 91, 31))
-        self.lcd.setObjectName("lcd")
-        self.analysis = QtWidgets.QTextEdit(Form)
-        self.analysis.setGeometry(QtCore.QRect(160, 340, 221, 71))
+        Form.resize(811, 566)
+        font = QtGui.QFont()
+        font.setBold(True)
+        font.setWeight(75)
+        Form.setFont(font)
+        self.widget = QtWidgets.QWidget(Form)
+        self.widget.setGeometry(QtCore.QRect(40, 10, 710, 550))
+        self.widget.setStyleSheet("background-color: rgb(104, 104, 104);\n"
+"border-radius: 25px;")
+        self.widget.setObjectName("widget")
+        self.close = QtWidgets.QPushButton(self.widget)
+        self.close.setGeometry(QtCore.QRect(10, 10, 41, 21))
+        self.close.setStyleSheet("background-color: rgb(255, 0, 0);\n"
+"color: rgb(255, 255, 255);\n"
+"border-radius: 10px; ")
+        self.close.setObjectName("close")
+        self.analysis = QtWidgets.QTextEdit(self.widget)
+        self.analysis.setGeometry(QtCore.QRect(160, 400, 351, 101))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        font.setBold(True)
+        font.setWeight(75)
+        self.analysis.setFont(font)
+        self.analysis.setStyleSheet("background-color: rgb(255, 255, 127);\n"
+"border-radius: 30px;\n"
+"")
         self.analysis.setObjectName("analysis")
-        self.ok = QtWidgets.QPushButton(Form)
-        self.ok.setGeometry(QtCore.QRect(480, 60, 75, 23))
-        self.ok.setObjectName("ok")
-        self.reset = QtWidgets.QPushButton(Form)
-        self.reset.setGeometry(QtCore.QRect(480, 140, 75, 23))
+        self.textBrowser_3 = QtWidgets.QTextBrowser(self.widget)
+        self.textBrowser_3.setGeometry(QtCore.QRect(170, 320, 121, 41))
+        self.textBrowser_3.setStyleSheet("color: rgb(255, 255, 255);\n"
+"background-color: rgb(255, 170, 127);\n"
+"border-radius: 20px;\n"
+"")
+        self.textBrowser_3.setObjectName("textBrowser_3")
+        self.weight = QtWidgets.QLineEdit(self.widget)
+        self.weight.setGeometry(QtCore.QRect(380, 200, 75, 30))
+        self.weight.setStyleSheet("color: rgb(255, 255, 255);\n"
+"background-color: rgb(170, 170, 127);\n"
+"border-radius: 15px;\n"
+"")
+        self.weight.setObjectName("weight")
+        self.lcd = QtWidgets.QLCDNumber(self.widget)
+        self.lcd.setGeometry(QtCore.QRect(370, 320, 100, 40))
+        self.lcd.setStyleSheet("color: rgb(0, 0, 0);\n"
+"background-color: rgb(255, 255, 127);\n"
+"border-radius: 20px;\n"
+"")
+        self.lcd.setObjectName("lcd")
+        self.textBrowser = QtWidgets.QTextBrowser(self.widget)
+        self.textBrowser.setGeometry(QtCore.QRect(170, 120, 121, 41))
+        self.textBrowser.setStyleSheet("color: rgb(255, 255, 255);\n"
+"background-color: rgb(255, 170, 0);\n"
+"border-radius: 15px;\n"
+"")
+        self.textBrowser.setObjectName("textBrowser")
+        self.reset = QtWidgets.QPushButton(self.widget)
+        self.reset.setGeometry(QtCore.QRect(600, 70, 75, 30))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        font.setBold(True)
+        font.setWeight(75)
+        self.reset.setFont(font)
+        self.reset.setStyleSheet("color: rgb(255, 255, 255);\n"
+"background-color: rgb(255, 170, 0);\n"
+"border-radius: 15px;\n"
+"")
         self.reset.setObjectName("reset")
+        self.textBrowser_2 = QtWidgets.QTextBrowser(self.widget)
+        self.textBrowser_2.setGeometry(QtCore.QRect(170, 200, 121, 41))
+        self.textBrowser_2.setStyleSheet("color: rgb(255, 255, 255);\n"
+"background-color: rgb(255, 170, 0);\n"
+"border-radius: 15px;\n"
+"")
+        self.textBrowser_2.setObjectName("textBrowser_2")
+        self.height = QtWidgets.QLineEdit(self.widget)
+        self.height.setGeometry(QtCore.QRect(380, 130, 75, 30))
+        self.height.setStyleSheet("color: rgb(255, 255, 255);\n"
+"background-color: rgb(170, 170, 127);\n"
+"border-radius: 15px;\n"
+"")
+        self.height.setObjectName("height")
+        self.ok = QtWidgets.QPushButton(self.widget)
+        self.ok.setGeometry(QtCore.QRect(600, 20, 75, 30))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        font.setBold(True)
+        font.setWeight(75)
+        self.ok.setFont(font)
+        self.ok.setStyleSheet("color: rgb(255, 255, 255);\n"
+"background-color: rgb(255, 170, 0);\n"
+"border-radius: 15px;\n"
+"")
+        self.ok.setObjectName("ok")
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -49,20 +114,28 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
-        self.textBrowser.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        self.close.setText(_translate("Form", "x"))
+        self.analysis.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">身高(m)</p></body></html>"))
-        self.textBrowser_2.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">体重(kg)</p></body></html>"))
+"</style></head><body style=\" font-family:\'SimSun\'; font-size:14pt; font-weight:600; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16pt;\">欢迎使用BMI计算器</span></p></body></html>"))
         self.textBrowser_3.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">BMI</p></body></html>"))
-        self.ok.setText(_translate("Form", "计算"))
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">BMI</span></p></body></html>"))
+        self.weight.setText(_translate("Form", "63"))
+        self.textBrowser.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">身高(m)</span></p></body></html>"))
         self.reset.setText(_translate("Form", "重置"))
+        self.textBrowser_2.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">体重(kg)</span></p></body></html>"))
+        self.height.setText(_translate("Form", "1.75"))
+        self.ok.setText(_translate("Form", "计算"))

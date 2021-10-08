@@ -14,85 +14,226 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(715, 547)
+        Form.resize(731, 579)
         self.textBrowser = QtWidgets.QTextBrowser(Form)
-        self.textBrowser.setGeometry(QtCore.QRect(90, 40, 101, 61))
+        self.textBrowser.setGeometry(QtCore.QRect(60, 40, 101, 61))
+        self.textBrowser.setStyleSheet("border-radius: 10px;\n"
+"background-color: rgb(255, 170, 0);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 15pt \"华文楷体\";")
         self.textBrowser.setObjectName("textBrowser")
         self.textBrowser_2 = QtWidgets.QTextBrowser(Form)
         self.textBrowser_2.setGeometry(QtCore.QRect(250, 40, 111, 61))
+        self.textBrowser_2.setStyleSheet("border-radius: 10px;\n"
+"background-color: rgb(255, 170, 0);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 15pt \"华文楷体\";")
         self.textBrowser_2.setObjectName("textBrowser_2")
         self.textBrowser_3 = QtWidgets.QTextBrowser(Form)
-        self.textBrowser_3.setGeometry(QtCore.QRect(430, 40, 111, 61))
+        self.textBrowser_3.setGeometry(QtCore.QRect(440, 40, 111, 61))
+        self.textBrowser_3.setStyleSheet("border-radius: 10px;\n"
+"background-color: rgb(255, 170, 0);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 15pt \"华文楷体\";")
         self.textBrowser_3.setObjectName("textBrowser_3")
         self.textEdit = QtWidgets.QTextEdit(Form)
-        self.textEdit.setGeometry(QtCore.QRect(100, 110, 50, 50))
+        self.textEdit.setGeometry(QtCore.QRect(70, 120, 75, 50))
+        self.textEdit.setStyleSheet("border-radius: 10px;\n"
+"background-color: rgb(255, 170, 0);\n"
+"color: rgb(255, 255, 255);")
         self.textEdit.setObjectName("textEdit")
         self.textEdit_4 = QtWidgets.QTextEdit(Form)
-        self.textEdit_4.setGeometry(QtCore.QRect(100, 160, 50, 50))
+        self.textEdit_4.setGeometry(QtCore.QRect(70, 180, 75, 50))
+        self.textEdit_4.setStyleSheet("border-radius: 10px;\n"
+"background-color: rgb(255, 170, 0);\n"
+"color: rgb(255, 255, 255);")
         self.textEdit_4.setObjectName("textEdit_4")
         self.textEdit_7 = QtWidgets.QTextEdit(Form)
-        self.textEdit_7.setGeometry(QtCore.QRect(100, 220, 50, 50))
+        self.textEdit_7.setGeometry(QtCore.QRect(70, 240, 75, 50))
+        self.textEdit_7.setStyleSheet("border-radius: 10px;\n"
+"background-color: rgb(255, 170, 0);\n"
+"color: rgb(255, 255, 255);")
         self.textEdit_7.setObjectName("textEdit_7")
         self.textEdit_10 = QtWidgets.QTextEdit(Form)
-        self.textEdit_10.setGeometry(QtCore.QRect(100, 280, 50, 50))
+        self.textEdit_10.setGeometry(QtCore.QRect(70, 300, 75, 50))
+        self.textEdit_10.setStyleSheet("border-radius: 10px;\n"
+"background-color: rgb(255, 170, 0);\n"
+"color: rgb(255, 255, 255);")
         self.textEdit_10.setObjectName("textEdit_10")
         self.textEdit_13 = QtWidgets.QTextEdit(Form)
-        self.textEdit_13.setGeometry(QtCore.QRect(100, 340, 50, 50))
+        self.textEdit_13.setGeometry(QtCore.QRect(70, 360, 75, 50))
+        self.textEdit_13.setStyleSheet("border-radius: 10px;\n"
+"background-color: rgb(255, 170, 0);\n"
+"color: rgb(255, 255, 255);")
         self.textEdit_13.setObjectName("textEdit_13")
         self.textEdit_17 = QtWidgets.QTextEdit(Form)
-        self.textEdit_17.setGeometry(QtCore.QRect(100, 400, 50, 50))
+        self.textEdit_17.setGeometry(QtCore.QRect(70, 420, 75, 50))
+        self.textEdit_17.setStyleSheet("border-radius: 10px;\n"
+"background-color: rgb(255, 170, 0);\n"
+"color: rgb(255, 255, 255);")
         self.textEdit_17.setObjectName("textEdit_17")
         self.textEdit_20 = QtWidgets.QTextEdit(Form)
-        self.textEdit_20.setGeometry(QtCore.QRect(100, 460, 50, 50))
+        self.textEdit_20.setGeometry(QtCore.QRect(70, 480, 75, 50))
+        self.textEdit_20.setStyleSheet("border-radius: 10px;\n"
+"background-color: rgb(255, 170, 0);\n"
+"color: rgb(255, 255, 255);")
         self.textEdit_20.setObjectName("textEdit_20")
         self.g_1 = QtWidgets.QLineEdit(Form)
-        self.g_1.setGeometry(QtCore.QRect(240, 120, 113, 20))
+        self.g_1.setGeometry(QtCore.QRect(270, 130, 75, 30))
+        self.g_1.setStyleSheet("border-radius: 10px;\n"
+"background-color: rgb(255, 170, 0);\n"
+"color: rgb(255, 255, 255);")
         self.g_1.setObjectName("g_1")
         self.g_2 = QtWidgets.QLineEdit(Form)
-        self.g_2.setGeometry(QtCore.QRect(240, 170, 113, 20))
+        self.g_2.setGeometry(QtCore.QRect(270, 190, 75, 30))
+        self.g_2.setStyleSheet("border-radius: 10px;\n"
+"background-color: rgb(255, 170, 0);\n"
+"color: rgb(255, 255, 255);")
         self.g_2.setObjectName("g_2")
         self.g_3 = QtWidgets.QLineEdit(Form)
-        self.g_3.setGeometry(QtCore.QRect(240, 220, 113, 20))
+        self.g_3.setGeometry(QtCore.QRect(270, 250, 75, 30))
+        self.g_3.setStyleSheet("border-radius: 10px;\n"
+"background-color: rgb(255, 170, 0);\n"
+"color: rgb(255, 255, 255);")
         self.g_3.setObjectName("g_3")
         self.g_4 = QtWidgets.QLineEdit(Form)
-        self.g_4.setGeometry(QtCore.QRect(230, 280, 113, 20))
+        self.g_4.setGeometry(QtCore.QRect(270, 310, 75, 30))
+        self.g_4.setStyleSheet("border-radius: 10px;\n"
+"background-color: rgb(255, 170, 0);\n"
+"color: rgb(255, 255, 255);")
         self.g_4.setObjectName("g_4")
         self.g_5 = QtWidgets.QLineEdit(Form)
-        self.g_5.setGeometry(QtCore.QRect(240, 360, 113, 20))
+        self.g_5.setGeometry(QtCore.QRect(270, 370, 75, 30))
+        self.g_5.setStyleSheet("border-radius: 10px;\n"
+"background-color: rgb(255, 170, 0);\n"
+"color: rgb(255, 255, 255);")
         self.g_5.setObjectName("g_5")
         self.g_6 = QtWidgets.QLineEdit(Form)
-        self.g_6.setGeometry(QtCore.QRect(240, 420, 113, 20))
+        self.g_6.setGeometry(QtCore.QRect(270, 430, 75, 30))
+        self.g_6.setStyleSheet("border-radius: 10px;\n"
+"background-color: rgb(255, 170, 0);\n"
+"color: rgb(255, 255, 255);")
         self.g_6.setObjectName("g_6")
         self.g_7 = QtWidgets.QLineEdit(Form)
-        self.g_7.setGeometry(QtCore.QRect(240, 460, 113, 20))
+        self.g_7.setGeometry(QtCore.QRect(270, 490, 75, 30))
+        self.g_7.setStyleSheet("border-radius: 10px;\n"
+"background-color: rgb(255, 170, 0);\n"
+"color: rgb(255, 255, 255);")
         self.g_7.setObjectName("g_7")
         self.c_1 = QtWidgets.QSpinBox(Form)
-        self.c_1.setGeometry(QtCore.QRect(450, 120, 61, 31))
+        self.c_1.setGeometry(QtCore.QRect(460, 130, 60, 40))
+        self.c_1.setStyleSheet("border-radius: 10px;\n"
+"background-color:rgb(170, 170, 0);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 12pt \"Agency FB\";\n"
+"")
         self.c_1.setObjectName("c_1")
         self.c_2 = QtWidgets.QSpinBox(Form)
-        self.c_2.setGeometry(QtCore.QRect(450, 160, 61, 31))
+        self.c_2.setGeometry(QtCore.QRect(460, 190, 60, 40))
+        self.c_2.setStyleSheet("border-radius: 10px;\n"
+"background-color:rgb(170, 170, 0);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 12pt \"Agency FB\";\n"
+"")
         self.c_2.setObjectName("c_2")
         self.c_3 = QtWidgets.QSpinBox(Form)
-        self.c_3.setGeometry(QtCore.QRect(450, 210, 61, 31))
+        self.c_3.setGeometry(QtCore.QRect(460, 250, 60, 40))
+        self.c_3.setStyleSheet("border-radius: 10px;\n"
+"background-color:rgb(170, 170, 0);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 12pt \"Agency FB\";\n"
+"")
         self.c_3.setObjectName("c_3")
         self.c_4 = QtWidgets.QSpinBox(Form)
-        self.c_4.setGeometry(QtCore.QRect(450, 270, 61, 31))
+        self.c_4.setGeometry(QtCore.QRect(460, 310, 60, 40))
+        self.c_4.setStyleSheet("border-radius: 10px;\n"
+"background-color:rgb(170, 170, 0);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 12pt \"Agency FB\";\n"
+"")
         self.c_4.setObjectName("c_4")
         self.c_5 = QtWidgets.QSpinBox(Form)
-        self.c_5.setGeometry(QtCore.QRect(450, 350, 61, 31))
+        self.c_5.setGeometry(QtCore.QRect(460, 370, 60, 40))
+        self.c_5.setStyleSheet("border-radius: 10px;\n"
+"background-color:rgb(170, 170, 0);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 12pt \"Agency FB\";\n"
+"")
         self.c_5.setObjectName("c_5")
         self.c_6 = QtWidgets.QSpinBox(Form)
-        self.c_6.setGeometry(QtCore.QRect(450, 410, 61, 31))
+        self.c_6.setGeometry(QtCore.QRect(460, 430, 60, 40))
+        self.c_6.setStyleSheet("border-radius: 10px;\n"
+"background-color:rgb(170, 170, 0);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 12pt \"Agency FB\";\n"
+"")
         self.c_6.setObjectName("c_6")
         self.c_7 = QtWidgets.QSpinBox(Form)
-        self.c_7.setGeometry(QtCore.QRect(450, 460, 61, 31))
+        self.c_7.setGeometry(QtCore.QRect(460, 490, 60, 40))
+        self.c_7.setStyleSheet("border-radius: 10px;\n"
+"background-color:rgb(170, 170, 0);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 12pt \"Agency FB\";\n"
+"")
         self.c_7.setObjectName("c_7")
         self.ok = QtWidgets.QPushButton(Form)
-        self.ok.setGeometry(QtCore.QRect(590, 430, 81, 61))
+        self.ok.setGeometry(QtCore.QRect(620, 500, 81, 41))
+        self.ok.setStyleSheet("border-radius: 10px;\n"
+"background-color: rgb(255, 170, 0);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 15pt \"华文楷体\";")
         self.ok.setObjectName("ok")
         self.final_grade = QtWidgets.QLCDNumber(Form)
         self.final_grade.setGeometry(QtCore.QRect(610, 40, 81, 61))
+        self.final_grade.setStyleSheet("border-radius: 10px;\n"
+"background-color: rgb(255, 170, 127);\n"
+"color: rgb(255, 255, 255);")
         self.final_grade.setObjectName("final_grade")
+        self.reset = QtWidgets.QPushButton(Form)
+        self.reset.setGeometry(QtCore.QRect(620, 450, 81, 41))
+        self.reset.setStyleSheet("border-radius: 10px;\n"
+"background-color: rgb(255, 170, 0);\n"
+"color: rgb(255, 255, 255);")
+        self.reset.setObjectName("reset")
+        self.widget = QtWidgets.QWidget(Form)
+        self.widget.setGeometry(QtCore.QRect(10, 10, 711, 541))
+        self.widget.setStyleSheet("background-color: rgb(104, 104, 104);\n"
+"border-radius: 25px;")
+        self.widget.setObjectName("widget")
+        self.close = QtWidgets.QPushButton(self.widget)
+        self.close.setGeometry(QtCore.QRect(10, 10, 41, 21))
+        self.close.setStyleSheet("background-color: rgb(255, 0, 0);\n"
+"color: rgb(255, 255, 255);\n"
+"border-radius: 10px; ")
+        self.close.setObjectName("close")
+        self.widget.raise_()
+        self.textBrowser.raise_()
+        self.textBrowser_2.raise_()
+        self.textBrowser_3.raise_()
+        self.textEdit.raise_()
+        self.textEdit_4.raise_()
+        self.textEdit_7.raise_()
+        self.textEdit_10.raise_()
+        self.textEdit_13.raise_()
+        self.textEdit_17.raise_()
+        self.textEdit_20.raise_()
+        self.g_1.raise_()
+        self.g_2.raise_()
+        self.g_3.raise_()
+        self.g_4.raise_()
+        self.g_5.raise_()
+        self.g_6.raise_()
+        self.g_7.raise_()
+        self.c_1.raise_()
+        self.c_2.raise_()
+        self.c_3.raise_()
+        self.c_4.raise_()
+        self.c_5.raise_()
+        self.c_6.raise_()
+        self.c_7.raise_()
+        self.ok.raise_()
+        self.final_grade.raise_()
+        self.reset.raise_()
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -103,18 +244,18 @@ class Ui_Form(object):
         self.textBrowser.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">课程</p></body></html>"))
+"</style></head><body style=\" font-family:\'华文楷体\'; font-size:15pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'SimSun\'; font-size:9pt;\">课程</span></p></body></html>"))
         self.textBrowser_2.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">成绩</p></body></html>"))
+"</style></head><body style=\" font-family:\'华文楷体\'; font-size:15pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'SimSun\'; font-size:9pt;\">成绩</span></p></body></html>"))
         self.textBrowser_3.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">学分(课时)</p></body></html>"))
+"</style></head><body style=\" font-family:\'华文楷体\'; font-size:15pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'SimSun\'; font-size:9pt;\">学分(课时)</span></p></body></html>"))
         self.g_1.setText(_translate("Form", "0"))
         self.g_2.setText(_translate("Form", "0"))
         self.g_3.setText(_translate("Form", "0"))
@@ -123,3 +264,5 @@ class Ui_Form(object):
         self.g_6.setText(_translate("Form", "0"))
         self.g_7.setText(_translate("Form", "0"))
         self.ok.setText(_translate("Form", "计算"))
+        self.reset.setText(_translate("Form", "Reset"))
+        self.close.setText(_translate("Form", "x"))

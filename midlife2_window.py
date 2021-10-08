@@ -4,16 +4,20 @@ import sys
 
 from midlife2 import Ui_Form
 from PyQt5.QtWidgets import *
+from PyQt5.QtCore import Qt
 
 class Midlife2Window(QMainWindow, Ui_Form):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
         self.forge_link()
+        self.setWindowFlags(Qt.FramelessWindowHint | Qt.Window)
+        self.setAttribute(Qt.WA_TranslucentBackground, True)
 
     def forge_link(self):
         self.ok.clicked.connect(self.Finish)
         self.reset.clicked.connect(self.Reset)
+        self.close.clicked.connect(self.Close)
 
     def Finish(self):
         money = [0, 3000, 12000, 25000, 35000, 55000, 80000]
@@ -46,6 +50,9 @@ class Midlife2Window(QMainWindow, Ui_Form):
         self.children.setText('0')
         self.olds.setText('0')
         self.divide.setText('0')
+
+    def Close(self):
+        self.hide()
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

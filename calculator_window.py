@@ -10,6 +10,7 @@ from midlife_window import MidlifeWindow
 from midlife2_window import Midlife2Window
 from midlife3_window import Midlife3Window
 from old_window import OldWindow
+from PyQt5.QtCore import Qt
 
 class MainWindow(QMainWindow, Ui_Form):
 
@@ -23,10 +24,21 @@ class MainWindow(QMainWindow, Ui_Form):
         #parent = None代表此QWidget属于最上层的窗口,也就是MainWindows
         super().__init__()
         self.setupUi(self)
+        self.setWindowFlags(Qt.FramelessWindowHint | Qt.Window)
+        self.setAttribute(Qt.WA_TranslucentBackground, True)
+        effect = QGraphicsDropShadowEffect(self)
+        effect.setBlurRadius(12)
+        effect.setOffset(0, 0)
+        effect.setColor(Qt.gray)
+
+        self.setGraphicsEffect(effect)
+
         self.forge_link()
         self.child = ChildWindow()
         self.youth = YouthWindow()
-        self.midlife = MidlifeWindow()
+        self.midlife1 = MidlifeWindow()
+        self.midlife2 = Midlife2Window()
+        self.midlife3 = Midlife3Window()
         self.old = OldWindow()
 
     def forge_link(self):
@@ -59,12 +71,9 @@ class MainWindow(QMainWindow, Ui_Form):
 
         self.b_equal.clicked.connect(self.equal_event)
 
+        self.pushButton.clicked.connect(self.Open)
 
-
-        self.b_child.clicked.connect(self.Child)
-        self.b_youth.clicked.connect(self.Youth)
-        self.b_midlife.clicked.connect(self.Mid)
-        self.b_old.clicked.connect(self.Old)
+        self.close.clicked.connect(self.Close)
 
     def button_event(self):
         self.lcdstring = self.lcdstring + self.sender().text()
@@ -168,17 +177,23 @@ class MainWindow(QMainWindow, Ui_Form):
         self.currentNum = -self.currentNum
         self.lcd.display(self.lcdstring)
 
-    def Child(self):
-        self.child.show()
+    def Close(self):
+        app = QApplication.instance()
+        app.quit()
 
-    def Youth(self):
-        self.youth.show()
-
-    def Mid(self):
-        self.midlife.show()
-
-    def Old(self):
-        self.old.show()
+    def Open(self):
+        if self.comboBox.currentText() == '个税计算器':
+            self.midlife2.show()
+        elif self.comboBox.currentText() == '贷款计算器':
+            self.midlife3.show()
+        elif self.comboBox.currentText() == '养老金计算器':
+            self.midlife1.show()
+        elif self.comboBox.currentText() == '胎儿体重计算器':
+            self.child.show()
+        elif self.comboBox.currentText() == '绩点计算器':
+            self.youth.show()
+        elif self.comboBox.currentText() == 'BMI计算器':
+            self.old.show()
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

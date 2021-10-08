@@ -1,4 +1,5 @@
 from PyQt5.QtWidgets import *
+from PyQt5.QtCore import Qt
 from youth import Ui_Form
 import sys
 import numpy as np
@@ -8,10 +9,13 @@ class YouthWindow(QMainWindow, Ui_Form):
         super().__init__()
         self.setupUi(self)
         self.forge_link()
+        self.setWindowFlags(Qt.FramelessWindowHint | Qt.Window)
+        self.setAttribute(Qt.WA_TranslucentBackground, True)
 
     def forge_link(self):
-
         self.ok.clicked.connect(self.finishinput)
+        self.close.clicked.connect(self.Close)
+
 
     def finishinput(self):
         grade = np.zeros(7)
@@ -41,6 +45,8 @@ class YouthWindow(QMainWindow, Ui_Form):
 
         self.final_grade.display(final)
         # print(final)
+    def Close(self):
+        self.hide()
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

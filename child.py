@@ -11,76 +11,128 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_Form(object):
-    def setupUi(self, Form):
-        Form.setObjectName("Form")
-        Form.resize(737, 535)
+class Ui_widget(object):
+    def setupUi(self, widget):
+        widget.setObjectName("widget")
+        widget.resize(800, 600)
         font = QtGui.QFont()
+        font.setFamily("黑体")
         font.setPointSize(9)
-        Form.setFont(font)
-        self.ok_1 = QtWidgets.QPushButton(Form)
-        self.ok_1.setGeometry(QtCore.QRect(430, 80, 75, 23))
-        self.ok_1.setObjectName("ok_1")
-        self.ok_2 = QtWidgets.QPushButton(Form)
-        self.ok_2.setGeometry(QtCore.QRect(430, 140, 75, 23))
-        self.ok_2.setObjectName("ok_2")
-        self.ok_3 = QtWidgets.QPushButton(Form)
-        self.ok_3.setGeometry(QtCore.QRect(430, 190, 75, 23))
-        self.ok_3.setObjectName("ok_3")
-        self.week = QtWidgets.QSpinBox(Form)
-        self.week.setGeometry(QtCore.QRect(170, 20, 42, 22))
-        self.week.setObjectName("week")
-        self.label = QtWidgets.QLabel(Form)
-        self.label.setGeometry(QtCore.QRect(60, 20, 71, 21))
-        self.label.setObjectName("label")
-        self.label_2 = QtWidgets.QLabel(Form)
-        self.label_2.setGeometry(QtCore.QRect(50, 80, 54, 12))
-        self.label_2.setObjectName("label_2")
-        self.label_3 = QtWidgets.QLabel(Form)
-        self.label_3.setGeometry(QtCore.QRect(60, 140, 54, 12))
-        self.label_3.setObjectName("label_3")
-        self.label_4 = QtWidgets.QLabel(Form)
-        self.label_4.setGeometry(QtCore.QRect(50, 200, 54, 12))
-        self.label_4.setObjectName("label_4")
-        self.p_1 = QtWidgets.QLineEdit(Form)
+        widget.setFont(font)
+        widget.setContextMenuPolicy(QtCore.Qt.DefaultContextMenu)
+        widget.setStyleSheet("border-radius:30px")
+        self.base_widget = QtWidgets.QWidget(widget)
+        self.base_widget.setGeometry(QtCore.QRect(20, 10, 710, 550))
+        self.base_widget.setStyleSheet("background-color: rgb(104, 104, 104);\n"
+"font: 15pt \"华文行楷\";\n"
+"")
+        self.base_widget.setObjectName("base_widget")
+        self.p_1 = QtWidgets.QLineEdit(self.base_widget)
         self.p_1.setEnabled(True)
-        self.p_1.setGeometry(QtCore.QRect(160, 80, 113, 20))
+        self.p_1.setGeometry(QtCore.QRect(470, 40, 75, 75))
+        self.p_1.setStyleSheet("font: 15pt \"华文行楷\";\n"
+"color: rgb(255, 255, 255);\n"
+"background-color: rgb(255, 170, 0);")
         self.p_1.setObjectName("p_1")
-        self.p_2 = QtWidgets.QLineEdit(Form)
-        self.p_2.setGeometry(QtCore.QRect(170, 140, 113, 20))
+        self.p_2 = QtWidgets.QLineEdit(self.base_widget)
+        self.p_2.setGeometry(QtCore.QRect(470, 150, 75, 75))
+        self.p_2.setStyleSheet("background-color: rgb(104, 104, 104);\n"
+"font: 15pt \"华文行楷\";\n"
+"color: rgb(255, 255, 255);\n"
+"background-color: rgb(255, 170, 0);")
         self.p_2.setObjectName("p_2")
-        self.p_3 = QtWidgets.QLineEdit(Form)
-        self.p_3.setGeometry(QtCore.QRect(170, 190, 113, 20))
+        self.p_3 = QtWidgets.QLineEdit(self.base_widget)
+        self.p_3.setGeometry(QtCore.QRect(470, 260, 75, 75))
+        self.p_3.setStyleSheet("background-color: rgb(104, 104, 104);\n"
+"font: 15pt \"华文行楷\";\n"
+"color: rgb(255, 255, 255);\n"
+"background-color: rgb(255, 170, 0);")
         self.p_3.setObjectName("p_3")
-        self.result = QtWidgets.QLCDNumber(Form)
-        self.result.setGeometry(QtCore.QRect(420, 330, 151, 61))
-        self.result.setObjectName("result")
-        self.textBrowser = QtWidgets.QTextBrowser(Form)
-        self.textBrowser.setGeometry(QtCore.QRect(85, 330, 321, 61))
-        self.textBrowser.setObjectName("textBrowser")
-        self.Reset = QtWidgets.QPushButton(Form)
-        self.Reset.setGeometry(QtCore.QRect(540, 20, 75, 23))
+        self.label_3 = QtWidgets.QLabel(self.base_widget)
+        self.label_3.setGeometry(QtCore.QRect(230, 160, 101, 51))
+        self.label_3.setStyleSheet("background-color: rgb(104, 104, 104);\n"
+"font: 15pt \"华文行楷\";\n"
+"color: rgb(255, 255, 255);\n"
+"background-color: rgb(255, 170, 0);\n"
+"border-radius: 15px")
+        self.label_3.setObjectName("label_3")
+        self.label_4 = QtWidgets.QLabel(self.base_widget)
+        self.label_4.setGeometry(QtCore.QRect(230, 270, 101, 51))
+        self.label_4.setStyleSheet("background-color: rgb(104, 104, 104);\n"
+"font: 15pt \"华文行楷\";\n"
+"color: rgb(255, 255, 255);\n"
+"background-color: rgb(255, 170, 0);\n"
+"border-radius: 15px")
+        self.label_4.setObjectName("label_4")
+        self.label_2 = QtWidgets.QLabel(self.base_widget)
+        self.label_2.setGeometry(QtCore.QRect(230, 50, 101, 51))
+        self.label_2.setStyleSheet("background-color: rgb(104, 104, 104);\n"
+"font: 15pt \"华文行楷\";\n"
+"color: rgb(255, 255, 255);\n"
+"background-color: rgb(255, 170, 0);\n"
+"border-radius: 15px")
+        self.label_2.setObjectName("label_2")
+        self.Reset = QtWidgets.QPushButton(self.base_widget)
+        self.Reset.setGeometry(QtCore.QRect(610, 470, 81, 41))
+        self.Reset.setStyleSheet("background-color: rgb(104, 104, 104);\n"
+"font: 15pt \"华文行楷\";\n"
+"background-color: rgb(255, 170, 0);\n"
+"color: rgb(255, 255, 255);\n"
+"border-radius: 12px;")
         self.Reset.setObjectName("Reset")
+        self.ok = QtWidgets.QPushButton(self.base_widget)
+        self.ok.setGeometry(QtCore.QRect(610, 400, 81, 41))
+        self.ok.setStyleSheet("background-color: rgb(104, 104, 104);\n"
+"font: 15pt \"华文行楷\";\n"
+"background-color: rgb(255, 170, 0);\n"
+"color: rgb(255, 255, 255);\n"
+"border-radius: 12px;")
+        self.ok.setObjectName("ok")
+        self.close = QtWidgets.QPushButton(self.base_widget)
+        self.close.setGeometry(QtCore.QRect(20, 10, 41, 21))
+        font = QtGui.QFont()
+        font.setFamily("华文行楷")
+        font.setPointSize(15)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.close.setFont(font)
+        self.close.setStyleSheet("background-color: rgb(255, 0, 0);\n"
+"color: rgb(255, 255, 255);\n"
+"border-radius: 10px; \n"
+"font: \"SimSun-ExtB\";")
+        self.close.setObjectName("close")
+        self.textBrowser = QtWidgets.QTextBrowser(self.base_widget)
+        self.textBrowser.setGeometry(QtCore.QRect(10, 420, 331, 61))
+        self.textBrowser.setStyleSheet("background-color: rgb(104, 104, 104);\n"
+"font: 15pt \"华文行楷\";\n"
+"background-color: rgb(255, 170, 127); \n"
+"color: rgb(255, 255, 255);")
+        self.textBrowser.setObjectName("textBrowser")
+        self.result = QtWidgets.QLCDNumber(self.base_widget)
+        self.result.setGeometry(QtCore.QRect(370, 420, 161, 71))
+        self.result.setStyleSheet("background-color: rgb(104, 104, 104);\n"
+"font: 15pt \"华文行楷\";\n"
+"background-color: rgb(255, 170, 127);")
+        self.result.setObjectName("result")
 
-        self.retranslateUi(Form)
-        QtCore.QMetaObject.connectSlotsByName(Form)
+        self.retranslateUi(widget)
+        QtCore.QMetaObject.connectSlotsByName(widget)
 
-    def retranslateUi(self, Form):
+    def retranslateUi(self, widget):
         _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "Form"))
-        self.ok_1.setText(_translate("Form", "PushButton"))
-        self.ok_2.setText(_translate("Form", "PushButton"))
-        self.ok_3.setText(_translate("Form", "PushButton"))
-        self.label.setText(_translate("Form", "孕期(周)"))
-        self.label_2.setText(_translate("Form", "参数一"))
-        self.label_3.setText(_translate("Form", "参数二"))
-        self.label_4.setText(_translate("Form", "参数三"))
-        self.p_1.setText(_translate("Form", "0"))
-        self.p_2.setText(_translate("Form", "0"))
-        self.p_3.setText(_translate("Form", "0"))
-        self.textBrowser.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        widget.setWindowTitle(_translate("widget", "胎儿体重计算器"))
+        self.p_1.setText(_translate("widget", "9.00"))
+        self.p_2.setText(_translate("widget", "30.00"))
+        self.p_3.setText(_translate("widget", "7.00"))
+        self.label_3.setText(_translate("widget", "腹围(cm)"))
+        self.label_4.setText(_translate("widget", "股骨长(cm)"))
+        self.label_2.setText(_translate("widget", "双顶径(cm)"))
+        self.Reset.setText(_translate("widget", "Reset"))
+        self.ok.setText(_translate("widget", "计算"))
+        self.close.setText(_translate("widget", "x"))
+        self.textBrowser.setHtml(_translate("widget", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:22pt;\">胎儿的体重(kg)约为：</span></p></body></html>"))
-        self.Reset.setText(_translate("Form", "Reset"))
+"</style></head><body style=\" font-family:\'华文行楷\'; font-size:15pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'SimSun\'; font-size:22pt;\">胎儿的体重(kg)约为</span></p></body></html>"))

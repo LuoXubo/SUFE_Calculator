@@ -1,5 +1,6 @@
 from old import Ui_Form
 from PyQt5.QtWidgets import *
+from PyQt5.QtCore import Qt
 import sys
 
 class OldWindow(QMainWindow, Ui_Form):
@@ -7,10 +8,13 @@ class OldWindow(QMainWindow, Ui_Form):
         super().__init__()
         self.setupUi(self)
         self.forge_link()
+        self.setWindowFlags(Qt.FramelessWindowHint | Qt.Window)
+        self.setAttribute(Qt.WA_TranslucentBackground, True)
 
     def forge_link(self):
         self.ok.clicked.connect(self.Finish)
         self.reset.clicked.connect(self.Reset)
+        self.close.clicked.connect(self.Close)
 
     def Finish(self):
         height = float(self.height.text())
@@ -37,6 +41,9 @@ class OldWindow(QMainWindow, Ui_Form):
         self.weight.setText('0')
         self.analysis.setText('')
         self.lcd.display(0)
+
+    def Close(self):
+        self.hide()
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
