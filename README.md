@@ -6,3 +6,5 @@ SUFE software engineering work in groups of two
 
 
 环境需求：PyQt5
+
+计算机科学的超电磁炮
