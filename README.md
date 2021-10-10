@@ -1,7 +1,7 @@
 # SUFE_Caculator
 SUFE software engineering work in groups of two
-
-
+成员：雒勖博2019111571&张栋2019110848
+---
 运行方法：运行calculator_window.py文件
 
 
