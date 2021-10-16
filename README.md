@@ -30,27 +30,27 @@
 
 > 主页面：实现简单的加减乘除、三角函数、乘方以及对数运算
 
-![image-20211016153205401](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211016153205401.png)
+![image-20211016153205401](https://github.com/LuoXubo/SUFE_Calculator/blob/main/2.jpg)
 
 > 胎儿体重计算器
 
-![image-20211016153250784](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211016153250784.png)
+![image-20211016153250784](https://github.com/LuoXubo/SUFE_Calculator/blob/main/3.jpg)
 
 > 绩点计算器
 
-![image-20211016153311224](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211016153311224.png)
+![image-20211016153311224](https://github.com/LuoXubo/SUFE_Calculator/blob/main/4.jpg)
 
 > 个税计算器
 
-![image-20211016153335264](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211016153335264.png)
+![image-20211016153335264](https://github.com/LuoXubo/SUFE_Calculator/blob/main/5.jpg)
 
 > 养老金计算器
 
-![image-20211016153358087](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211016153358087.png)
+![image-20211016153358087](https://github.com/LuoXubo/SUFE_Calculator/blob/main/6.jpg)
 
 > 贷款计算器
 
-![image-20211016153421698](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20211016153421698.png)
+![image-20211016153421698](https://github.com/LuoXubo/SUFE_Calculator/blob/main/7.jpg)
 
 > BMI计算器
 
