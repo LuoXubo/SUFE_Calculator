@@ -26,7 +26,7 @@
 
 ### 功能介绍
 
-![image-20211016153007855](https://raw.github.com/LuoXubo/repositpry/master/SUFE_Calculator/1.jpg)
+![image-20211016153007855](https://github.com/LuoXubo/SUFE_Calculator/blob/main/1.jpg)
 
 > 主页面：实现简单的加减乘除、三角函数、乘方以及对数运算
 
