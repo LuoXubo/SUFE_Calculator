@@ -16,8 +16,8 @@
   <widget class="QWidget" name="base_widget" native="true">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>30</y>
+     <x>40</x>
+     <y>10</y>
      <width>710</width>
      <height>550</height>
     </rect>
@@ -29,16 +29,24 @@ border-radius: 25px;</string>
    <widget class="QLCDNumber" name="lcdNumber">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>450</y>
-      <width>161</width>
-      <height>81</height>
+      <x>480</x>
+      <y>440</y>
+      <width>211</width>
+      <height>91</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>楷体</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 170, 0);
-color: rgb(255, 255, 255);
-font: 9pt &quot;楷体&quot;;
+     <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;楷体&quot;;
 border-radius: 10px;
 </string>
     </property>
@@ -80,7 +88,7 @@ border-radius: 10px;
 </string>
     </property>
     <property name="text">
-     <string>Reset</string>
+     <string>重置</string>
     </property>
    </widget>
    <widget class="QCheckBox" name="check_2">
@@ -96,7 +104,7 @@ border-radius: 10px;
      <number>0</number>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 170, 127);
+     <string notr="true">background-color: rgb(255, 255, 127);
 color: rgb(0, 0, 0);
 font: 10pt &quot;楷体&quot;;
 border-radius: 10px;
@@ -136,7 +144,7 @@ border-radius: 10px;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'楷体'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:14pt; font-weight:600;&quot;&gt;在职员工平均工资&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;在职员工平均工资&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QTextBrowser" name="textBrowser_4">
@@ -169,7 +177,7 @@ border-radius: 10px;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'楷体'; font-size:20pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:14pt; font-weight:600;&quot;&gt;在职员工平均工资&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;个人账户储蓄&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="salary">
@@ -225,7 +233,7 @@ border-radius: 10px;
      <number>0</number>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 170, 127);
+     <string notr="true">background-color: rgb(255, 255, 127);
 color: rgb(0, 0, 0);
 font: 10pt &quot;楷体&quot;;
 border-radius: 10px;
@@ -305,7 +313,7 @@ border-radius: 10px;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'楷体'; font-size:20pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:14pt; font-weight:600;&quot;&gt;在职员工平均工资&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;平均缴费指数&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QTextBrowser" name="textBrowser_3">
@@ -338,27 +346,56 @@ border-radius: 10px;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'楷体'; font-size:20pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:14pt; font-weight:600;&quot;&gt;在职员工平均工资&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;累计缴费年限&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="close">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>20</x>
       <y>10</y>
-      <width>41</width>
+      <width>21</width>
       <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 0, 0);
+     <string notr="true">background-color: #F16C61;
 color: rgb(255, 255, 255);
 border-radius: 10px; </string>
     </property>
     <property name="text">
-     <string>x</string>
+     <string/>
     </property>
    </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>711</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url('./mid1.jpg');
+</string>
+    </property>
+   </widget>
+   <zorder>widget</zorder>
+   <zorder>lcdNumber</zorder>
+   <zorder>ok</zorder>
+   <zorder>reset</zorder>
+   <zorder>check_2</zorder>
+   <zorder>textBrowser</zorder>
+   <zorder>textBrowser_4</zorder>
+   <zorder>salary</zorder>
+   <zorder>avg</zorder>
+   <zorder>check_1</zorder>
+   <zorder>sum</zorder>
+   <zorder>year</zorder>
+   <zorder>textBrowser_2</zorder>
+   <zorder>textBrowser_3</zorder>
+   <zorder>close</zorder>
   </widget>
  </widget>
  <resources/>

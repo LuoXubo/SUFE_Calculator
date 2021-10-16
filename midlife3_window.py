@@ -27,6 +27,7 @@ class Midlife3Window(QMainWindow, Ui_Form):
         mp = (total * mrate * (1+mrate) ** mcnt) / ((1+mrate)**mcnt - 1)
         sum = mp*mcnt - total
         self.lcd1.display(mp)
+        self.lcd2.setDigitCount(10)
         self.lcd2.display(sum)
 
     def Reset(self):

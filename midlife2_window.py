@@ -39,7 +39,7 @@ class Midlife2Window(QMainWindow, Ui_Form):
                     result += (min(res,money[i+1])-money[i]) * rate[i]
                 else:
                     break
-            result += min(res-money[6], 0) * rate[6]
+            result += max(res-money[6], 0) * rate[6]
 
         self.lcd.display(result)
 

@@ -21,68 +21,103 @@ class Ui_Form(object):
 "border-radius: 25px;")
         self.widget.setObjectName("widget")
         self.close = QtWidgets.QPushButton(self.widget)
-        self.close.setGeometry(QtCore.QRect(10, 10, 41, 21))
-        self.close.setStyleSheet("background-color: rgb(255, 0, 0);\n"
+        self.close.setGeometry(QtCore.QRect(20, 10, 21, 21))
+        self.close.setStyleSheet("background-color: #F16C61;\n"
 "color: rgb(255, 255, 255);\n"
 "border-radius: 10px; ")
+        self.close.setText("")
         self.close.setObjectName("close")
         self.ok = QtWidgets.QPushButton(self.widget)
-        self.ok.setGeometry(QtCore.QRect(590, 420, 75, 40))
+        self.ok.setGeometry(QtCore.QRect(600, 430, 75, 40))
         self.ok.setStyleSheet("background-color: rgb(255, 170, 0);\n"
+"font: 12pt \"幼圆\";\n"
 "color: rgb(255, 255, 255);\n"
 "border-radius: 10px;\n"
-"font: 12pt \"楷体\";")
+"")
         self.ok.setObjectName("ok")
         self.textBrowser_4 = QtWidgets.QTextBrowser(self.widget)
-        self.textBrowser_4.setGeometry(QtCore.QRect(80, 300, 120, 50))
+        self.textBrowser_4.setGeometry(QtCore.QRect(80, 310, 120, 50))
+        font = QtGui.QFont()
+        font.setFamily("楷体")
+        font.setPointSize(9)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.textBrowser_4.setFont(font)
         self.textBrowser_4.setStyleSheet("background-color: rgb(255, 170, 0);\n"
 "color: rgb(255, 255, 255);\n"
 "border-radius: 10px;\n"
 "font: 9pt \"楷体\";")
         self.textBrowser_4.setObjectName("textBrowser_4")
         self.lcd = QtWidgets.QLCDNumber(self.widget)
-        self.lcd.setGeometry(QtCore.QRect(550, 20, 131, 81))
-        self.lcd.setStyleSheet("background-color: rgb(255, 170, 0);\n"
+        self.lcd.setGeometry(QtCore.QRect(480, 30, 201, 81))
+        font = QtGui.QFont()
+        font.setBold(False)
+        font.setWeight(50)
+        font.setKerning(True)
+        self.lcd.setFont(font)
+        self.lcd.setStyleSheet("\n"
 "color: rgb(255, 255, 255);\n"
 "border-radius: 10px;")
         self.lcd.setObjectName("lcd")
         self.children = QtWidgets.QLineEdit(self.widget)
-        self.children.setGeometry(QtCore.QRect(330, 240, 75, 30))
+        self.children.setGeometry(QtCore.QRect(330, 250, 75, 30))
         self.children.setStyleSheet("background-color: rgb(255, 170, 127);\n"
 "color: rgb(0, 0, 0);\n"
 "border-radius: 10px;\n"
 "font: 75 12pt \"Agency FB\";")
         self.children.setObjectName("children")
         self.textBrowser_3 = QtWidgets.QTextBrowser(self.widget)
-        self.textBrowser_3.setGeometry(QtCore.QRect(80, 230, 120, 50))
+        self.textBrowser_3.setGeometry(QtCore.QRect(80, 240, 120, 50))
+        font = QtGui.QFont()
+        font.setFamily("楷体")
+        font.setPointSize(9)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.textBrowser_3.setFont(font)
         self.textBrowser_3.setStyleSheet("background-color: rgb(255, 170, 0);\n"
 "color: rgb(255, 255, 255);\n"
 "border-radius: 10px;\n"
 "font: 9pt \"楷体\";")
         self.textBrowser_3.setObjectName("textBrowser_3")
         self.textBrowser_5 = QtWidgets.QTextBrowser(self.widget)
-        self.textBrowser_5.setGeometry(QtCore.QRect(80, 370, 120, 50))
+        self.textBrowser_5.setGeometry(QtCore.QRect(80, 380, 120, 50))
+        font = QtGui.QFont()
+        font.setFamily("楷体")
+        font.setPointSize(9)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.textBrowser_5.setFont(font)
         self.textBrowser_5.setStyleSheet("background-color: rgb(255, 170, 0);\n"
 "color: rgb(255, 255, 255);\n"
 "border-radius: 10px;\n"
 "font: 9pt \"楷体\";")
         self.textBrowser_5.setObjectName("textBrowser_5")
         self.divide = QtWidgets.QLineEdit(self.widget)
-        self.divide.setGeometry(QtCore.QRect(330, 380, 75, 30))
+        self.divide.setGeometry(QtCore.QRect(330, 390, 75, 30))
         self.divide.setStyleSheet("background-color: rgb(255, 170, 127);\n"
 "color: rgb(0, 0, 0);\n"
 "border-radius: 10px;\n"
 "font: 75 12pt \"Agency FB\";")
         self.divide.setObjectName("divide")
         self.olds = QtWidgets.QLineEdit(self.widget)
-        self.olds.setGeometry(QtCore.QRect(330, 310, 75, 30))
+        self.olds.setGeometry(QtCore.QRect(330, 320, 75, 30))
         self.olds.setStyleSheet("background-color: rgb(255, 170, 127);\n"
 "color: rgb(0, 0, 0);\n"
 "border-radius: 10px;\n"
 "font: 75 12pt \"Agency FB\";")
         self.olds.setObjectName("olds")
         self.textBrowser_2 = QtWidgets.QTextBrowser(self.widget)
-        self.textBrowser_2.setGeometry(QtCore.QRect(80, 160, 120, 50))
+        self.textBrowser_2.setGeometry(QtCore.QRect(80, 170, 120, 50))
+        font = QtGui.QFont()
+        font.setFamily("楷体")
+        font.setPointSize(9)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.textBrowser_2.setFont(font)
         self.textBrowser_2.setStyleSheet("background-color: rgb(255, 170, 0);\n"
 "color: rgb(255, 255, 255);\n"
 "border-radius: 10px;\n"
@@ -90,6 +125,10 @@ class Ui_Form(object):
         self.textBrowser_2.setObjectName("textBrowser_2")
         self.textBrowser = QtWidgets.QTextBrowser(self.widget)
         self.textBrowser.setGeometry(QtCore.QRect(80, 100, 120, 50))
+        font = QtGui.QFont()
+        font.setBold(False)
+        font.setWeight(50)
+        self.textBrowser.setFont(font)
         self.textBrowser.setStyleSheet("background-color: rgb(255, 170, 0);\n"
 "color: rgb(255, 255, 255);\n"
 "border-radius: 10px;\n"
@@ -103,19 +142,40 @@ class Ui_Form(object):
 "font: 75 12pt \"Agency FB\";")
         self.salary.setObjectName("salary")
         self.minus = QtWidgets.QLineEdit(self.widget)
-        self.minus.setGeometry(QtCore.QRect(330, 170, 75, 30))
+        self.minus.setGeometry(QtCore.QRect(330, 180, 75, 30))
         self.minus.setStyleSheet("background-color: rgb(255, 170, 127);\n"
 "color: rgb(0, 0, 0);\n"
 "border-radius: 10px;\n"
 "font: 75 12pt \"Agency FB\";")
         self.minus.setObjectName("minus")
         self.reset = QtWidgets.QPushButton(self.widget)
-        self.reset.setGeometry(QtCore.QRect(590, 480, 75, 40))
+        self.reset.setGeometry(QtCore.QRect(600, 490, 75, 40))
         self.reset.setStyleSheet("background-color: rgb(255, 170, 0);\n"
+"font: 12pt \"幼圆\";\n"
 "color: rgb(255, 255, 255);\n"
 "border-radius: 10px;\n"
-"font: 12pt \"楷体\";")
+"")
         self.reset.setObjectName("reset")
+        self.widget_2 = QtWidgets.QWidget(self.widget)
+        self.widget_2.setGeometry(QtCore.QRect(0, 0, 711, 551))
+        self.widget_2.setStyleSheet("background-image: url(\'./mid2.jpg\');\n"
+"")
+        self.widget_2.setObjectName("widget_2")
+        self.widget_2.raise_()
+        self.close.raise_()
+        self.ok.raise_()
+        self.textBrowser_4.raise_()
+        self.lcd.raise_()
+        self.children.raise_()
+        self.textBrowser_3.raise_()
+        self.textBrowser_5.raise_()
+        self.divide.raise_()
+        self.olds.raise_()
+        self.textBrowser_2.raise_()
+        self.textBrowser.raise_()
+        self.salary.raise_()
+        self.minus.raise_()
+        self.reset.raise_()
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -123,37 +183,36 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "个税计算器"))
-        self.close.setText(_translate("Form", "x"))
         self.ok.setText(_translate("Form", "计算"))
         self.textBrowser_4.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'楷体\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'SimSun\'; font-size:12pt;\">赡养老人数</span></p></body></html>"))
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">赡养老人数</span></p></body></html>"))
         self.children.setText(_translate("Form", "1"))
         self.textBrowser_3.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'楷体\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'SimSun\'; font-size:12pt;\">抚养子女数</span></p></body></html>"))
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">抚养子女数</span></p></body></html>"))
         self.textBrowser_5.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'楷体\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'SimSun\'; font-size:12pt;\">分摊赡养老人费用人数</span></p></body></html>"))
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">分摊赡养老人费用人数</span></p></body></html>"))
         self.divide.setText(_translate("Form", "0"))
         self.olds.setText(_translate("Form", "1"))
         self.textBrowser_2.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'楷体\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'SimSun\'; font-size:12pt;\">五险一金专项扣除</span></p></body></html>"))
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">五险一金专项扣除</span></p></body></html>"))
         self.textBrowser.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">月收入</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'楷体\'; font-size:12pt;\">月收入</span></p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
         self.salary.setText(_translate("Form", "15000"))
         self.minus.setText(_translate("Form", "1000"))
-        self.reset.setText(_translate("Form", "Reset"))
+        self.reset.setText(_translate("Form", "重置"))

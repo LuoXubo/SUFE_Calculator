@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>799</width>
-    <height>569</height>
+    <width>738</width>
+    <height>561</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -24,8 +24,8 @@
    </property>
    <property name="styleSheet">
     <string notr="true">border-radius: 10px;
-background-color: rgb(255, 170, 0);
-color: rgb(255, 255, 255);
+background-color: rgb(255, 255, 127);
+color: rgb(0, 0, 0);
 font: 15pt &quot;华文楷体&quot;;</string>
    </property>
    <property name="html">
@@ -33,7 +33,7 @@ font: 15pt &quot;华文楷体&quot;;</string>
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'华文楷体'; font-size:15pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:9pt;&quot;&gt;课程&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'楷体'; font-size:12pt; font-weight:600;&quot;&gt;课程&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QTextBrowser" name="textBrowser_2">
@@ -47,8 +47,8 @@ p, li { white-space: pre-wrap; }
    </property>
    <property name="styleSheet">
     <string notr="true">border-radius: 10px;
-background-color: rgb(255, 170, 0);
-color: rgb(255, 255, 255);
+background-color: rgb(255, 255, 127);
+color: rgb(0, 0, 0);
 font: 15pt &quot;华文楷体&quot;;</string>
    </property>
    <property name="html">
@@ -56,7 +56,7 @@ font: 15pt &quot;华文楷体&quot;;</string>
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'华文楷体'; font-size:15pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:9pt;&quot;&gt;成绩&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'楷体'; font-size:12pt; font-weight:600;&quot;&gt;成绩&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QTextBrowser" name="textBrowser_3">
@@ -70,8 +70,8 @@ p, li { white-space: pre-wrap; }
    </property>
    <property name="styleSheet">
     <string notr="true">border-radius: 10px;
-background-color: rgb(255, 170, 0);
-color: rgb(255, 255, 255);
+background-color: rgb(255, 255, 127);
+color: rgb(0, 0, 0);
 font: 15pt &quot;华文楷体&quot;;</string>
    </property>
    <property name="html">
@@ -79,7 +79,7 @@ font: 15pt &quot;华文楷体&quot;;</string>
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'华文楷体'; font-size:15pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:9pt;&quot;&gt;学分(课时)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'楷体'; font-size:12pt; font-weight:600;&quot;&gt;学分(课时)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QTextEdit" name="textEdit">
@@ -432,25 +432,6 @@ font: 12pt &quot;Agency FB&quot;;
 </string>
    </property>
   </widget>
-  <widget class="QPushButton" name="ok">
-   <property name="geometry">
-    <rect>
-     <x>620</x>
-     <y>500</y>
-     <width>81</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius: 10px;
-background-color: rgb(255, 170, 0);
-color: rgb(255, 255, 255);
-font: 15pt &quot;华文楷体&quot;;</string>
-   </property>
-   <property name="text">
-    <string>计算</string>
-   </property>
-  </widget>
   <widget class="QLCDNumber" name="final_grade">
    <property name="geometry">
     <rect>
@@ -466,35 +447,17 @@ background-color: rgb(255, 170, 127);
 color: rgb(255, 255, 255);</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="reset">
-   <property name="geometry">
-    <rect>
-     <x>620</x>
-     <y>450</y>
-     <width>81</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius: 10px;
-background-color: rgb(255, 170, 0);
-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text">
-    <string>Reset</string>
-   </property>
-  </widget>
   <widget class="QWidget" name="widget" native="true">
    <property name="geometry">
     <rect>
      <x>10</x>
      <y>10</y>
-     <width>710</width>
-     <height>550</height>
+     <width>741</width>
+     <height>531</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(104, 104, 104);
+    <string notr="true">
 border-radius: 25px;</string>
    </property>
    <widget class="QPushButton" name="close">
@@ -502,19 +465,73 @@ border-radius: 25px;</string>
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>41</width>
+      <width>21</width>
       <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 0, 0);
+     <string notr="true">background-color: #F16C61;
 color: rgb(255, 255, 255);
 border-radius: 10px; </string>
     </property>
     <property name="text">
-     <string>x</string>
+     <string/>
     </property>
    </widget>
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>711</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image : url('./youth1.jpg');
+</string>
+    </property>
+    <widget class="QPushButton" name="reset">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>410</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 10px;
+background-color: rgb(255, 170, 0);
+color: rgb(255, 255, 255);
+font: 14pt &quot;楷体&quot;;</string>
+     </property>
+     <property name="text">
+      <string>重置</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ok">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>460</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 10px;
+background-color: rgb(255, 170, 0);
+color: rgb(255, 255, 255);
+font: 15pt &quot;华文楷体&quot;;</string>
+     </property>
+     <property name="text">
+      <string>计算</string>
+     </property>
+    </widget>
+   </widget>
+   <zorder>widget_2</zorder>
+   <zorder>close</zorder>
   </widget>
   <zorder>widget</zorder>
   <zorder>textBrowser</zorder>
@@ -541,9 +558,7 @@ border-radius: 10px; </string>
   <zorder>c_5</zorder>
   <zorder>c_6</zorder>
   <zorder>c_7</zorder>
-  <zorder>ok</zorder>
   <zorder>final_grade</zorder>
-  <zorder>reset</zorder>
  </widget>
  <resources/>
  <connections/>

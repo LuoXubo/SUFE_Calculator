@@ -71,9 +71,28 @@ class MainWindow(QMainWindow, Ui_Form):
 
         self.b_equal.clicked.connect(self.equal_event)
 
-        self.pushButton.clicked.connect(self.Open)
+        self.b_child.clicked.connect(self.openchild)
+        self.b_youth.clicked.connect(self.openyouth)
+        self.b_mid1.clicked.connect(self.openmid1)
+        self.b_mid2.clicked.connect(self.openmid2)
+        self.b_mid3.clicked.connect(self.openmid3)
+        self.b_old.clicked.connect(self.openold)
 
         self.close.clicked.connect(self.Close)
+        self.min.clicked.connect(self.Min)
+
+    def openchild(self):
+        self.child.show()
+    def openyouth(self):
+        self.youth.show()
+    def openmid1(self):
+        self.midlife1.show()
+    def openmid2(self):
+        self.midlife2.show()
+    def openmid3(self):
+        self.midlife3.show()
+    def openold(self):
+        self.old.show()
 
     def button_event(self):
         self.lcdstring = self.lcdstring + self.sender().text()
@@ -181,19 +200,8 @@ class MainWindow(QMainWindow, Ui_Form):
         app = QApplication.instance()
         app.quit()
 
-    def Open(self):
-        if self.comboBox.currentText() == '个税计算器':
-            self.midlife2.show()
-        elif self.comboBox.currentText() == '贷款计算器':
-            self.midlife3.show()
-        elif self.comboBox.currentText() == '养老金计算器':
-            self.midlife1.show()
-        elif self.comboBox.currentText() == '胎儿体重计算器':
-            self.child.show()
-        elif self.comboBox.currentText() == '绩点计算器':
-            self.youth.show()
-        elif self.comboBox.currentText() == 'BMI计算器':
-            self.old.show()
+    def Min(self):
+        self.showMinimized()
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
